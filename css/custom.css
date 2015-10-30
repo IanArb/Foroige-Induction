@@ -1,0 +1,177 @@
+/* =============================================================
+   Sidebar Styles
+ ============================================================ */
+ body{
+    background-color: #fff;
+    overflow-x: hidden;
+ }
+#wrapper{
+    padding-left: 0;
+    -webkit-transition: all 0.7s ease;
+    -moz-transition: all 0.7s ease;
+    -o-transition: all 0.7s ease;
+    transition: all 0.7s ease;
+}
+
+/* Sidebar */
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    width: 0;
+    left: 250px;
+    height: 100%;
+    margin-left: -250px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    background: #2C3E50;
+    border: 1px solid #2C3E50;
+    -webkit-transition: all 0.7s ease;
+    -moz-transition: all 0.7s ease;
+    -o-transition: all 0.7s ease;
+    transition: all 0.7s ease;
+}
+
+/* Change with of sidebar from 0 to 250px */
+#wrapper.menuDisplayed #sidebar-wrapper {
+    width: 250px;
+}
+
+/* Since we added left padding, we need to shrink the width by 250px */
+#wrapper.menuDisplayed #page-content-wrapper {
+    position: absolute;
+    padding-left: 250px;
+}
+
+/* Always take up entire screen */
+#page-content-wrapper {
+    width: 100%;
+    position: absolute;
+    padding: 15px;
+    margin-top: 60px;
+}
+/* Sidebar styling - the entire ul list */
+.sidebar-nav {
+    padding: 0;
+    list-style: none;
+    top: 0;
+    width: 250px;
+    margin-top: 60px;
+    position: absolute;
+}
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #ddd;
+}
+
+.sidebar-nav p {
+    display: block;
+    text-decoration: none;
+    color: #ddd;
+}
+
+.sidebar-nav li a:hover {
+    background: #3498db;
+}
+.modal-backdrop {
+  z-index: -1;
+}
+
+
+/* Dropdown accordion menu style */
+
+.panel-default > .panel-custom{
+    background: #2C3E50;
+}
+
+.panel-custom{
+    background: #2C3E50;
+    
+}
+
+.panel-info > .panel-table{
+    background: #8E44AD;
+}
+
+.panel-info > .panel-mission{
+    background: #F7CA18;
+}
+
+.panel-info > .panel-conf{
+    background: #4183D7;
+}
+
+
+.text-custom a{
+    color: #fff;
+    text-decoration: none;
+}
+    .text-custom a:hover{
+        text-decoration: none;
+        color: #fff;
+    }
+
+.panel-collapse li{
+    margin-left: -20px;
+}
+
+li.panel-body {
+    text-decoration: none;
+    width: 100%;
+}
+
+li.panel-body > li a:hover {
+    color: #ddd;
+}
+
+li.panel-custom:hover{
+    background: #3498db;
+}
+
+/* =============================================================
+    Navbar Styles
+ ============================================================ */
+
+ .navbar.transparent.navbar-inverse{
+    background-color: #fff;
+ }
+
+ .nav.navbar-nav li a{
+  color: rgb(32, 32, 32);
+}
+
+.nav.navbar-nav li a:hover{
+    color: #3498db;
+}
+
+.navbar-responsive-collapse{
+    background: #fff;
+}
+
+.mdi-navigation-menu{
+    color: rgb(0,0,0);
+    cursor: pointer;
+  }
+
+/* =============================================================
+    Container Styles
+ ============================================================ */
+.container-fluid{
+    margin-top: 10px;
+}
+
+#projects{
+    margin-top: 10px;
+}
+
+.loader{
+    margin-left: 350px;
+}
+
+
